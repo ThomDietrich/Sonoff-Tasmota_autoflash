@@ -19,7 +19,7 @@ ports()
 
 port=raw_input("Which port do you want to use?\n")
 device= raw_input("Which device are you using? Type 0 for touch or 4CH and 1 for the others\n")
-filepath=raw_input("Enter the filepath of the firmwarefile\n (Please beware that only ASCII letters are allowed) /n")
+filepath=raw_input("Enter the filepath of the firmwarefile\n(Please be aware that only ASCII letters are allowed) \n")
 
 #install esptools
 install("esptool")
