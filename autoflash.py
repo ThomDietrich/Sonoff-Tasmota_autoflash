@@ -19,7 +19,7 @@ ports()
 
 port=raw_input("Which port do you want to use?\n")
 device= raw_input("Which device are you using? Type 0 for touch or 4CH and 1 for the others\n")
-filepath=raw_input("Enter the filepath of the firmwarefile\n")
+filepath=raw_input("Enter the filepath of the firmwarefile\n (Please beware that only ASCII letters are allowed) /n")
 
 #install esptools
 install("esptool")
@@ -34,7 +34,8 @@ if(err_erase !=0):
     sys.exit()
 
 
-#Wait to reconnect
+#Wait to reconnect (I'm not sure if it's ESPtools oder my usb to serial converter,
+#but after erasing the flash, I cannot find the device, so you have to reconnect it
 raw_input("Reconnect then press enter\n")
 
 #Select device
